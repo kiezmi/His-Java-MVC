@@ -1,9 +1,32 @@
-# Api_Tienda_Electrodomesticos
-Aplicacion creada para llevar un orden de aparatos electronicos vendidos dentro de una tienda.
-Cada aparato es o generico o de tipo especifico(Televisor, lavadora, etc...), todos extienden 
-de la clase padre electrodomestico y a cada uno se le da nuevos atributos segun su tipo, 
-por ahora solo hay 2 tipos pero se pueden añadir todos los que se quiera, incluso hacer subtipos.
+# Api_Administracion_De_un_Hospital(HIS)
 
-A la aplicacion le pasariamos la cantidad de electrodomesticos que hemos vendido y el los calcularia
-con sus propiedades y te muestra los electrodomesticos por tipos y la suma total de cada uno de ellos
-y la suma general de todos los eclectrodomesticos.
+Aplicacion creada para administrar un sistema hospitalario.
+Tiene varios puntos que se iran expandiendo:
+-Creacion de roles (Admin, paciente, doctor y tecnico)
+-Conexion a una base de datos montada en docker con MySQL 5.7
+
+Principalmente un paciente puede:
+-Ver su historial medico, donde tendra todas las visitas realizadas con el dia hora y medico que le atendio.
+-Pedir cita (Proximamente)
+-Modificar sus datos
+
+Un doctor puede:
+-Ver listados de pacientes
+-Ver ficha de un paciente en concreto
+-Ver el historial de un paciente
+-Añadir entradas en el historial del paciente
+-Modificar datos de un paciente
+-Modificar sus datos
+
+Un tecnico puede:
+-Ver listados de doctores
+-Ver listados de pacientes
+-Ver ficha de un paciente
+-Ver ficha de un doctor
+-Modificar datos de un doctor
+-Modificar sus datos
+-Crear nuevos usuarios con roles menos Admin
+
+Admin puede:
+-Crear todos los usuarios
+-Modificar todos los usuarios
